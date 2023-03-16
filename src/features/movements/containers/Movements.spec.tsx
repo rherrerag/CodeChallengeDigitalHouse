@@ -11,22 +11,9 @@ import {Provider} from 'react-redux';
 import Movements from './Movements';
 import {store} from '../../../redux';
 import mockFetch from 'jest-fetch-mock';
-import {extendTheme, NativeBaseProvider} from 'native-base';
+import {NativeBaseProvider} from 'native-base';
 import {NavigationContainer} from '@react-navigation/native';
-
-const theme = extendTheme({
-  colors: {
-    primary: {
-      100: '#334FFA',
-      200: '#CFD6FF',
-    },
-    text: {
-      title: '#020202',
-      subtitle: '#9B9898',
-      normal: '#000000',
-    },
-  },
-});
+import {customTheme} from '../../../constants/theme';
 
 const inset = {
   frame: {x: 0, y: 0, width: 0, height: 0},
@@ -45,7 +32,7 @@ const MovementsFactory = async () => {
   });
   render(
     <Provider store={store}>
-      <NativeBaseProvider theme={theme} initialWindowMetrics={inset}>
+      <NativeBaseProvider theme={customTheme} initialWindowMetrics={inset}>
         <NavigationContainer>
           <Movements />
         </NavigationContainer>

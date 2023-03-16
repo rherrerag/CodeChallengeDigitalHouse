@@ -28,11 +28,15 @@ const ProductDetail = () => {
   const movement = item;
   const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
   let date = new Date(movement?.createdAt);
-  let dateFormat: string = `Comprado el ${date.getDay()} de ${
-    monthNames[date.getMonth()]
-  }, ${date.getFullYear()}`;
+  let dateFormat: string = `${
+    labels.PRODUCT_DETAIL.DATE_SUBSTRING
+  } ${date.getDay()} de ${monthNames[date.getMonth()]}, ${date.getFullYear()}`;
 
   const goToMovements = () => navigation.navigate('Movements');
+  const pointSummaryString =
+    movement?.points.toLocaleString('es-MX') +
+    ' ' +
+    labels.PRODUCT_DETAIL.POINTS_TEXT;
 
   return (
     <MainContainer flex="1">
@@ -46,11 +50,7 @@ const ProductDetail = () => {
             <ProductInfo
               productDetailTitle={labels.PRODUCT_DETAIL.SUBTITLE_DETAIL}
               pointsSummaryTitle={labels.PRODUCT_DETAIL.SUBTITLE_SUMMARY}
-              pointsSummary={
-                movement?.points.toLocaleString('es-MX') +
-                ' ' +
-                labels.PRODUCT_DETAIL.POINTS_TEXT
-              }
+              pointsSummary={pointSummaryString}
               dateFormatted={dateFormat}
             />
             <AcceptButton

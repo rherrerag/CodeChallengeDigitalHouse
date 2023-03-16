@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductTitle Component debería generar snapshot de componente correctamente 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    [
+      {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    dataSet={{}}
+    style={
+      [
+        {
+          "backgroundColor": "#CFD6FF",
+        },
+        [
+          {
+            "paddingBottom": 24,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 80,
+          },
+          undefined,
+        ],
+      ]
+    }
+  >
+    <Text
+      dataSet={{}}
+      style={
+        [
+          {
+            "backgroundColor": undefined,
+            "color": "#171717",
+            "fontFamily": undefined,
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+            "letterSpacing": 0,
+            "lineHeight": 21,
+            "textDecorationLine": undefined,
+          },
+          [
+            {
+              "fontSize": 24,
+              "fontWeight": "800",
+              "lineHeight": 24,
+            },
+            undefined,
+          ],
+        ]
+      }
+    >
+      Titulo de Prueba
+    </Text>
+  </View>
+</RNCSafeAreaProvider>
+`;

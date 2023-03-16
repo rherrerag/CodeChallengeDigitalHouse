@@ -26,7 +26,7 @@ Simulación de sistema de visualización de movimientos de puntos ganados y canj
 - __Filtro por fecha:__
     Se incluye configuración de parámetros de fecha para filtrar movimientos (mes y año). Para esto se deben configurar los parámetros en `src/constants/config`.
 - __Test unitarios:__
-    Se incluyen test unitarios con `Jest` de containers, API, Redux y Utilities. Ejecutar con el comando `yarn test`.
+    Se incluyen test unitarios con `Jest` de Containers, Components, API, Redux y Utilities. Ejecutar con el comando `yarn test`.
 
 ## Capturas de ejemplo
 ![Todos los movimientos](screenshots/screenshot1.png)
