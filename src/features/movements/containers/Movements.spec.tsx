@@ -20,8 +20,6 @@ const inset = {
   insets: {top: 0, left: 0, right: 0, bottom: 0},
 };
 
-jest.mock('react-native/Libraries/Lists/FlatList', () => 'FlatList');
-
 const MovementsFactory = async () => {
   mockFetch.mockResponse(req => {
     if (req.url.includes('products')) {
@@ -44,10 +42,24 @@ const MovementsFactory = async () => {
   );
 };
 
+const mockedDispatch = jest.fn();
+
+jest.mock('@react-navigation/native', () => {
+  const actualNav = jest.requireActual('@react-navigation/native');
+  return {
+    ...actualNav,
+    useNavigation: () => ({
+      navigate: jest.fn(),
+      dispatch: mockedDispatch,
+    }),
+  };
+});
+
 describe('Movements Container', () => {
   beforeEach(() => {
     mockFetch.enableMocks();
     mockFetch.resetMocks();
+    mockedDispatch.mockClear();
   });
 
   it('debería generar snapshot de container correctamente', async () => {
@@ -76,5 +88,13 @@ describe('Movements Container', () => {
       fireEvent(screen.getByTestId('redeemed-points-button'), 'press');
     });
     expect(screen.getByTestId('total-points-button')).toBeTruthy();
+  });
+
+  it('debería encontrar movimiento en Flatlist por id y navegar a pantalla siguiente', async () => {
+    await MovementsFactory();
+    await act(() => {
+      fireEvent(screen.getByTestId('movement-2'), 'press');
+    });
+    expect(screen.getByTestId('movement-2')).toBeTruthy();
   });
 });

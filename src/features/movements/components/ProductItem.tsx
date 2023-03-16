@@ -44,16 +44,16 @@ const ProductItem: React.FC<ProductItemProps> = ({movement}) => {
   const sign = movement?.is_redemption ? renderMinus() : renderPlus();
 
   return (
-    <TouchableOpacity onPress={() => goToProductDetail(movement)}>
+    <TouchableOpacity
+      onPress={() => goToProductDetail(movement)}
+      testID={'movement-' + movement?.id}>
       <ItemContainer space={2}>
         <ImageContainer>
           <ThumbnailImage source={{uri: movement?.image}} resizeMode="cover" />
         </ImageContainer>
         <LeftContainer>
           <VStack>
-            <ProductTitle testID={movement?.product}>
-              {movement?.product}
-            </ProductTitle>
+            <ProductTitle>{movement?.product}</ProductTitle>
             <DateSubtitle>{fechaFormat}</DateSubtitle>
           </VStack>
         </LeftContainer>
