@@ -54,6 +54,7 @@ const ProductDetail = () => {
               dateFormatted={dateFormat}
             />
             <AcceptButton
+              testID="accept-button"
               bgColor="primary.100"
               _text={{
                 fontSize: 16,
