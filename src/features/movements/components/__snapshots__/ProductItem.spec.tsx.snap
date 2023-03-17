@@ -1,0 +1,349 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Detail Container debería generar snapshot de componente correctamente 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    [
+      {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <RNGestureHandlerButton
+    collapsable={false}
+    delayLongPress={600}
+    enabled={true}
+    exclusive={true}
+    handlerTag={1}
+    handlerType="NativeViewGestureHandler"
+    onGestureEvent={[Function]}
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+    onHandlerStateChange={[Function]}
+    rippleColor={0}
+    testID="movement-3"
+    touchSoundDisabled={false}
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        dataSet={{}}
+        style={
+          [
+            {
+              "flexDirection": "row",
+            },
+            [
+              {
+                "flexDirection": "row",
+                "paddingBottom": 4,
+                "paddingTop": 4,
+              },
+              undefined,
+            ],
+          ]
+        }
+      >
+        <View
+          dataSet={{}}
+          style={
+            [
+              {},
+              [
+                {
+                  "alignSelf": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "flex-start",
+                },
+                undefined,
+              ],
+            ]
+          }
+        >
+          <Image
+            resizeMode="cover"
+            source={
+              {
+                "uri": "https://loremflickr.com/640/480/technics",
+              }
+            }
+            style={
+              [
+                {
+                  "borderBottomLeftRadius": 10,
+                  "borderBottomRightRadius": 10,
+                  "borderTopLeftRadius": 10,
+                  "borderTopRightRadius": 10,
+                  "height": 55,
+                  "width": 55,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+        <View
+          dataSet={{}}
+          style={
+            {
+              "width": 8,
+            }
+          }
+        />
+        <View
+          dataSet={{}}
+          style={
+            [
+              {},
+              [
+                {
+                  "alignSelf": "center",
+                  "flexBasis": 0,
+                  "flexDirection": "row",
+                  "flexGrow": 2,
+                  "flexShrink": 1,
+                  "justifyContent": "flex-start",
+                },
+                undefined,
+              ],
+            ]
+          }
+        >
+          <View
+            dataSet={{}}
+            style={{}}
+          >
+            <Text
+              dataSet={{}}
+              style={
+                [
+                  {
+                    "backgroundColor": undefined,
+                    "color": "#171717",
+                    "fontFamily": undefined,
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "400",
+                    "letterSpacing": 0,
+                    "lineHeight": 21,
+                    "textDecorationLine": undefined,
+                  },
+                  [
+                    {
+                      "fontSize": 14,
+                      "fontWeight": "800",
+                      "lineHeight": 19,
+                      "paddingBottom": 7,
+                    },
+                    undefined,
+                  ],
+                ]
+              }
+            >
+              Fantastic Granite Bacon
+            </Text>
+            <View
+              dataSet={{}}
+              style={{}}
+            />
+            <Text
+              dataSet={{}}
+              style={
+                [
+                  {
+                    "backgroundColor": undefined,
+                    "color": "#171717",
+                    "fontFamily": undefined,
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "400",
+                    "letterSpacing": 0,
+                    "lineHeight": 21,
+                    "textDecorationLine": undefined,
+                  },
+                  [
+                    {
+                      "fontSize": 12,
+                      "lineHeight": 16,
+                    },
+                    undefined,
+                  ],
+                ]
+              }
+            >
+              6 de Marzo, 2023
+            </Text>
+          </View>
+        </View>
+        <View
+          dataSet={{}}
+          style={
+            {
+              "width": 8,
+            }
+          }
+        />
+        <View
+          dataSet={{}}
+          style={
+            [
+              {},
+              [
+                {
+                  "alignSelf": "center",
+                  "flexBasis": 0,
+                  "flexDirection": "row",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "justifyContent": "flex-end",
+                },
+                undefined,
+              ],
+            ]
+          }
+        >
+          <Text
+            dataSet={{}}
+            style={
+              [
+                {
+                  "backgroundColor": undefined,
+                  "color": "#171717",
+                  "fontFamily": undefined,
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                  "lineHeight": 21,
+                  "textDecorationLine": undefined,
+                },
+                [
+                  {
+                    "alignSelf": "center",
+                    "fontSize": 16,
+                    "fontWeight": "800",
+                    "justifyContent": "center",
+                    "lineHeight": 22,
+                  },
+                  undefined,
+                ],
+              ]
+            }
+          >
+            <Text
+              dataSet={{}}
+              style={
+                [
+                  {
+                    "backgroundColor": undefined,
+                    "fontFamily": undefined,
+                    "fontSize": undefined,
+                    "fontStyle": undefined,
+                    "fontWeight": undefined,
+                    "textDecorationLine": undefined,
+                  },
+                  [
+                    {
+                      "color": "green",
+                      "fontSize": 16,
+                      "fontWeight": "800",
+                      "lineHeight": 22,
+                    },
+                    undefined,
+                  ],
+                ]
+              }
+            >
+              +
+            </Text>
+            42,416
+          </Text>
+          <RNSVGSvgView
+            accessibilityRole="image"
+            align="xMidYMid"
+            bbHeight={16}
+            bbWidth={16}
+            color={4285756275}
+            dataSet={{}}
+            focusable={false}
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            stroke=""
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                [
+                  {
+                    "color": "#737373",
+                    "height": 16,
+                    "width": 16,
+                  },
+                  [
+                    {
+                      "alignSelf": "center",
+                      "fontSize": 16,
+                      "lineHeight": 22,
+                      "marginLeft": 4,
+                      "marginTop": 2,
+                    },
+                    undefined,
+                  ],
+                ],
+                {
+                  "flex": 0,
+                  "height": 16,
+                  "width": 16,
+                },
+              ]
+            }
+            tintColor={4285756275}
+            vbHeight={24}
+            vbWidth={24}
+          >
+            <RNSVGGroup
+              propList={
+                [
+                  "stroke",
+                ]
+              }
+              stroke={null}
+            >
+              <RNSVGGroup>
+                <RNSVGPath
+                  d="M6 3.77141L14.3785 12.0027L6.00268 20.2314L7.80293 22L18 12L7.80293 2L6 3.77141Z"
+                  fill={
+                    [
+                      2,
+                    ]
+                  }
+                  propList={
+                    [
+                      "fill",
+                      "stroke",
+                    ]
+                  }
+                  stroke={null}
+                />
+              </RNSVGGroup>
+            </RNSVGGroup>
+          </RNSVGSvgView>
+        </View>
+      </View>
+    </View>
+  </RNGestureHandlerButton>
+</RNCSafeAreaProvider>
+`;
